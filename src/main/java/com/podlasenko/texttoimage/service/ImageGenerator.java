@@ -1,6 +1,6 @@
-package com.podlasenko.stringtoimage.service;
+package com.podlasenko.texttoimage.service;
 
-import com.podlasenko.stringtoimage.api.model.ImageText;
+import com.podlasenko.texttoimage.api.model.ImageText;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;

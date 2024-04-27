@@ -1,4 +1,4 @@
-package com.podlasenko.stringtoimage.api.model;
+package com.podlasenko.texttoimage.api.model;
 
 import lombok.Data;
 

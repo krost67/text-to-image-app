@@ -1,7 +1,7 @@
-package com.podlasenko.stringtoimage.controller;
+package com.podlasenko.texttoimage.controller;
 
-import com.podlasenko.stringtoimage.api.model.ImageText;
-import com.podlasenko.stringtoimage.service.ImageGenerator;
+import com.podlasenko.texttoimage.api.model.ImageText;
+import com.podlasenko.texttoimage.service.IImageGenerator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/images")
 public class TextToImageController {
 
-    private final ImageGenerator imageGenerator;
+    private final IImageGenerator imageGenerator;
 
     @PostMapping("/convert")
     public ResponseEntity<Resource> getUserDetails(@RequestBody ImageText imageText) {
